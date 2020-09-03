@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    form(method='POST' action='/search')
+        .form-group
+            label(for='exampleInputEmail1') Nhap tu khoa
+            input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', name='q')
+        button.btn.btn-primary(type='submit') Submit
+
